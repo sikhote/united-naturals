@@ -4,10 +4,11 @@
 [![Blazing Fast](https://img.shields.io/badge/speed-blazing%20%F0%9F%94%A5-brightgreen.svg)](https://twitter.com/acdlite/status/974390255393505280)
 
 # United Naturals
-Demo page
+[https://united-naturals.sikhote.vercel.app/]
 
 ## Notes
 - Built with react, next, xo, lodash, emotion, and more
+- Automatically deploys to [https://united-naturals.sikhote.vercel.app/]
 
 ## Commands
 - `yarn dev` to develop and visit [http://localhost:3000/]
