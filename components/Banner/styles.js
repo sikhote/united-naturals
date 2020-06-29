@@ -95,7 +95,7 @@ export default {
     backgroundSize: 'cover',
     color: colors.white,
     display: 'inline-flex',
-    width: 177,
+    width: 180,
     height: 33,
     padding: '4px 27px 5px 19px',
     alignItems: 'center',

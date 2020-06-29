@@ -11,6 +11,7 @@ https://united-naturals.sikhote.vercel.app/
 - Automatically deploys to https://united-naturals.sikhote.vercel.app/
 
 ## Commands
+- `yarn` to install dependencies
 - `yarn dev` to develop and visit http://localhost:3000/
 - `yarn build` to build for production
 - `yarn start` to run in production mode and visit http://localhost:3000/
