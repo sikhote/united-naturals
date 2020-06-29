@@ -1,13 +1,19 @@
 import React from 'react';
 import Head from 'next/head';
 import language from 'lib/language';
+import styles from './styles';
+import Header from 'components/Header';
+import Banner from 'components/Banner';
 
-const Index = ({ store, dispatch }) => (
-  <div>
+const Index = () => (
+  <div css={styles.root}>
     <Head>
       <title key="title">{language.index.title}</title>
     </Head>
-    <p>Hello world!</p>
+    <div css={styles.inner}>
+      <Header />
+      <Banner />
+    </div>
   </div>
 );
 

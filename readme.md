@@ -6,14 +6,17 @@
 # United Naturals
 Demo page
 
-## notes
-- Built with react, next, xo, lodash, and more
+## Notes
+- Built with react, next, xo, lodash, emotion, and more
 
-## commands
-- `yarn dev` to develop
+## Commands
+- `yarn dev` to develop and visit [http://localhost:3000/]
 - `yarn build` to build for production
-- `yarn start` to run in production mode
+- `yarn start` to run in production mode and visit [http://localhost:3000/]
 
-## development requirements
+## Development requirements
 - node
 - yarn
+
+## Time
+6 hours

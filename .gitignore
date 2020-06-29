@@ -3,12 +3,3 @@
 node_modules
 yarn-error.log
 .next
-
-# native
-.expo/*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-*.orig.*
