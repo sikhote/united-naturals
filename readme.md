@@ -4,16 +4,16 @@
 [![Blazing Fast](https://img.shields.io/badge/speed-blazing%20%F0%9F%94%A5-brightgreen.svg)](https://twitter.com/acdlite/status/974390255393505280)
 
 # United Naturals
-[https://united-naturals.sikhote.vercel.app/]
+https://united-naturals.sikhote.vercel.app/
 
 ## Notes
 - Built with react, next, xo, lodash, emotion, and more
-- Automatically deploys to [https://united-naturals.sikhote.vercel.app/]
+- Automatically deploys to https://united-naturals.sikhote.vercel.app/
 
 ## Commands
-- `yarn dev` to develop and visit [http://localhost:3000/]
+- `yarn dev` to develop and visit http://localhost:3000/
 - `yarn build` to build for production
-- `yarn start` to run in production mode and visit [http://localhost:3000/]
+- `yarn start` to run in production mode and visit http://localhost:3000/
 
 ## Development requirements
 - node
