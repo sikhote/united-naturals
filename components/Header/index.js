@@ -9,7 +9,7 @@ const Header = () => (
       src="/images/Layer 2.svg"
       alt={language.header.logo}
     />
-    <a css={styles.phone} href={`tele:${language.header.number}`}>
+    <a css={styles.phone} href={`tel:${language.header.number}`}>
       <img
         css={styles.icon}
         src="/images/phone icon.svg"
