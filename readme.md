@@ -21,4 +21,4 @@ https://united-naturals.sikhote.vercel.app/
 - yarn
 
 ## Time
-9 hours
+9.5 hours
