@@ -1,8 +1,32 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { merge } from 'lodash';
 import language from 'lib/language';
 import styles from './styles';
-import { merge } from 'lodash';
+import BuyNow from 'components/BuyNow';
+
+const getDecDollar = (number) =>
+  new Intl.NumberFormat('en', {
+    minimumFractionDigits: 2,
+    style: 'currency',
+    currency: 'USD',
+  }).format(number);
+
+const prices = {
+  6: {
+    normal: 324,
+    instant: 80,
+    final: 244,
+  },
+  3: {
+    normal: 162,
+    instant: 28,
+    final: 134,
+  },
+  1: {
+    final: 54,
+  },
+};
 
 const SmallPillar = ({ title, center, footer }) => (
   <div css={styles.pillar}>
@@ -64,6 +88,7 @@ Radio.propTypes = {
 
 const Banner = () => {
   const [radio, setRadio] = useState('3');
+  const { normal, instant, final } = prices[radio];
 
   return (
     <div css={styles.root}>
@@ -139,23 +164,20 @@ const Banner = () => {
                 />
               </div>
             </fieldset>
-            <div css={styles.centerNor}>
-              {language.banner.centerNor}{' '}
-              <span css={styles.centerNorPrice}>
-                {language.banner.centerNorPrice}
-              </span>
-            </div>
-            <div css={styles.centerInst}>{language.banner.centerInst}</div>
-            <div css={styles.centerPrice}>{language.banner.centerPrice}</div>
+            {normal && (
+              <div css={styles.centerNor}>
+                {language.banner.centerNor}{' '}
+                <span css={styles.centerNorPrice}>{getDecDollar(normal)}</span>
+              </div>
+            )}
+            {instant && (
+              <div css={styles.centerInst}>
+                {language.banner.centerInst} {getDecDollar(instant)}
+              </div>
+            )}
+            <div css={styles.centerPrice}>{getDecDollar(final)}</div>
             <div css={styles.centerParen}>{language.banner.centerParen}</div>
-            <button type="button" css={styles.centerBuy} onClick={() => null}>
-              {language.banner.centerBuy}
-              <img
-                css={styles.arrow}
-                src="/images/Arrow CTA.svg"
-                alt={language.banner.centerBuy}
-              />
-            </button>
+            <BuyNow css={styles.centerBuy} />
             <div css={styles.centerFree}>
               {language.banner.centerFree}
               <img
