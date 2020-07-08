@@ -7,7 +7,7 @@ const BuyNow = (props) => (
     {language.buyNow.centerBuy}
     <img
       css={styles.arrow}
-      src="/images/Arrow CTA.svg"
+      src={`${process.env.assetPrefix}/images/Arrow CTA.svg`}
       alt={language.buyNow.centerBuy}
     />
   </button>

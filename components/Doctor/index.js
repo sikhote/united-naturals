@@ -11,7 +11,7 @@ const Doctor = () => (
       </div>
       <img
         css={styles.picture}
-        src="/images/PedrePhotoMagazine_rgb_free.png"
+        src={`${process.env.assetPrefix}/images/PedrePhotoMagazine_rgb_free.png`}
         alt={language.doctor.title}
       />
     </div>

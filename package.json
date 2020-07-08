@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "next",
     "now-build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "NODE_ENV=production next build && next export"
   },
   "xo": {
     "prettier": true,

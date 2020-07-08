@@ -9,7 +9,7 @@ const Stars = ({ count, text, ...props }) => (
       <img
         key={i}
         css={styles.starImage}
-        src="/images/Favorite.svg"
+        src={`${process.env.assetPrefix}/images/Favorite.svg`}
         alt={language.reviews.star}
       />
     ))}

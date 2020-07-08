@@ -96,7 +96,7 @@ const Banner = () => {
       <div css={styles.pillSection}>
         <img
           css={styles.bottle}
-          src="/images/gut_connect365-1-600_530x@2x.png"
+          src={`${process.env.assetPrefix}/images/gut_connect365-1-600_530x@2x.png`}
           alt={language.banner.bottle}
         />
         <div css={styles.bulletAndFlyer}>
@@ -123,7 +123,7 @@ const Banner = () => {
             center: (
               <img
                 css={styles.moneyBack}
-                src="/images/Group 3111.svg"
+                src={`${process.env.assetPrefix}/images/Group 3111.svg`}
                 alt={language.banner.side1Alt}
               />
             ),
@@ -182,7 +182,7 @@ const Banner = () => {
               {language.banner.centerFree}
               <img
                 css={styles.truck}
-                src="/images/delivery icon.svg"
+                src={`${process.env.assetPrefix}/images/delivery icon.svg`}
                 alt={language.banner.centerFree}
               />
             </div>

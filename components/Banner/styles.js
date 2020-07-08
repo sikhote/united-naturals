@@ -24,11 +24,10 @@ export default {
   root: {
     paddingTop: 45,
     paddingBottom: 114,
-    background: 'url("/images/jay-mantri-TFyi0QOx08c-unsplash.png") no-repeat',
+    background: `url("${process.env.assetPrefix}/images/jay-mantri-TFyi0QOx08c-unsplash.png") no-repeat`,
     backgroundSize: 'cover',
     '@media (min-resolution: 192dpi)': {
-      background:
-        'url("/images/jay-mantri-TFyi0QOx08c-unsplash@2x.png") no-repeat',
+      background: `url(${process.env.assetPrefix}"/images/jay-mantri-TFyi0QOx08c-unsplash@2x.png") no-repeat`,
       backgroundSize: 'cover',
     },
     [`@media (max-width: ${bps.d}px)`]: {
@@ -91,7 +90,7 @@ export default {
     },
   },
   num1: {
-    background: 'url("/images/Union 2.svg") no-repeat',
+    background: `url("${process.env.assetPrefix}/images/Union 2.svg") no-repeat`,
     backgroundSize: 'cover',
     color: colors.white,
     display: 'inline-flex',
@@ -160,12 +159,11 @@ export default {
   doctorPic: {
     height: '100%',
     width: '100%',
-    background: 'url("/images/PedrePhotoMagazine_rgb_free.png") no-repeat',
+    background: `url("${process.env.assetPrefix}/images/PedrePhotoMagazine_rgb_free.png") no-repeat`,
     backgroundSize: '193px 266px',
     backgroundPosition: 'top 0 left 77px',
     '@media (min-resolution: 192dpi)': {
-      background:
-        'url("/images/PedrePhotoMagazine_rgb_free.png@2x.png") no-repeat',
+      background: `url("${process.env.assetPrefix}/images/PedrePhotoMagazine_rgb_free.png@2x.png") no-repeat`,
       backgroundSize: '193px 266px',
     },
   },

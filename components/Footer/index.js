@@ -8,7 +8,7 @@ const Footer = () => (
     <div css={styles.section}>
       <img
         css={styles.bottle}
-        src="/images/gut_connect365-ChocolateCoconut_01.png"
+        src={`${process.env.assetPrefix}/images/gut_connect365-ChocolateCoconut_01.png`}
         alt={language.footer.bottle}
       />
       <div css={styles.right}>
@@ -19,10 +19,16 @@ const Footer = () => (
     </div>
     <div css={styles.cards}>
       {[
-        { src: '/images/VISA.png', alt: 'VISA' },
-        { src: '/images/Master.png', alt: 'Master' },
-        { src: '/images/discover.png', alt: 'Discover' },
-        { src: '/images/americanexpress.png', alt: 'AMEX' },
+        { src: `${process.env.assetPrefix}/images/VISA.png`, alt: 'VISA' },
+        { src: `${process.env.assetPrefix}/images/Master.png`, alt: 'Master' },
+        {
+          src: `${process.env.assetPrefix}/images/discover.png`,
+          alt: 'Discover',
+        },
+        {
+          src: `${process.env.assetPrefix}/images/americanexpress.png`,
+          alt: 'AMEX',
+        },
       ].map(({ src, alt }) => (
         <img key={src} css={styles.card} src={src} alt={alt} />
       ))}

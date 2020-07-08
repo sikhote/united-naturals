@@ -19,7 +19,10 @@ const Faq = () => {
         {items.map(({ title, body, open }, index) => (
           <li key={title} className={open ? '' : 'closed'}>
             <div role="button" onClick={() => toggleItem(index)}>
-              <img src="/images/Arrow CTA-1.svg" alt={language.faq.arrow} />
+              <img
+                src={`${process.env.assetPrefix}/images/Arrow CTA-1.svg`}
+                alt={language.faq.arrow}
+              />
               <div>{title}</div>
             </div>
             <div dangerouslySetInnerHTML={{ __html: body }} />
